@@ -15,17 +15,11 @@
 
 ## 游戏演示
 
-### 猜测正确
+![匹配成功](Demo/MemoryGameMATCH.gif)
 
-<video src="Demo/MemoryGameMATCH.mp4"></video>
+![匹配错误](Demo/MemoryGameWRONG.gif)
 
-### 猜测错误
-
-<video src="Demo/MemoryGameWRONG.mp4"></video>
-
-#### 游戏获胜
-
-<video src="Demo/MemoryGameWINNING.mp4"></video>
+![游戏获胜](Demo/MemoryGameWINNING.gif)
 
 ## 使用技术
 使用 HTML 和 CSS 搭建版型，并通过 JavaScript 添加交互。此外该项目还使用了 [jQuery](https://jquery.com/) 和 [Animate.css](https://animate.style/) 框架。
