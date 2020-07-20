@@ -66,10 +66,10 @@ class Card {
     }
 
     open() {
-        this.target.addClass("open animate__animated animate__flipInY");
+        this.target.addClass("open animate__animated animate__flipInY animate__faster");
         // add animation and when it end remove the class
         this.target.on('animationend', () => {
-            this.target.removeClass('animate__animated animate__flipInY');
+            this.target.removeClass('animate__animated animate__flipInY animate__faster');
         });
     }
 
@@ -81,9 +81,9 @@ class Card {
         open = [];
         let matchElements = $(".open");
         matchElements.toggleClass("open match")
-        matchElements.addClass("match animate__animated animate__bounceIn");
+        matchElements.addClass("match animate__animated animate__bounceIn animate__fast");
         matchElements.on('animationend', () => {
-            matchElements.removeClass("open animate__animated animate__bounceIn");
+            matchElements.removeClass("open animate__animated animate__bounceIn animate__fast");
         });
         ++score;
     }
@@ -92,9 +92,9 @@ class Card {
         open = [];
         let openElements = $('.open');
         openElements.toggleClass("open unMatch")
-        openElements.addClass("animate__animated animate__shakeX");
+        openElements.addClass("animate__animated animate__shakeX animate__fast");
         openElements.on('animationend', () => {
-            openElements.removeClass("unMatch animate__animated animate__shakeX");
+            openElements.removeClass("unMatch animate__animated animate__shakeX animate__fast");
         });
     }
 }
